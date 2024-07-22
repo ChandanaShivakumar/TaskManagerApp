@@ -1,0 +1,129 @@
+.prim{
+    margin-right: 1000px;
+    width: 15%;
+    margin-top: 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.tcard{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.tcard-body{
+    padding: 0.7rem;
+}
+
+.tcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .task{
+    margin-top: 20px;
+  }
+
+  /* Container for search and sort elements */
+.search-sort-container {
+    display: flex;
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 1rem;
+  }
+  
+  .search-bar {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 400px;
+    margin-right: 40rem;
+  }
+  
+  .sort-dropdown {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .tcard-title{
+    background-color: #549eed;
+    padding: 2% 2% 2% 2%;
+    text-align: left;
+    color: white;
+  }
+
+  .nested-card {
+    background-color: #a2c7f0;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.nested-card .card-body {
+    padding: 10px;
+}
+
+.icard-body{
+    text-align: left;
+    color: black;
+}
+
+button.btn-del{
+    background-color: rgb(225, 123, 72);
+    color: white;
+    padding: 1% 1% 1% 1%;
+    font-size:small;
+}
+
+button.btn-edi{
+    background-color: rgb(93, 157, 230);
+    color: white;
+    padding: 1% 1% 1% 1%;
+    font-size:small;
+}
+
+button.btn-vie{
+    background-color: rgb(34, 81, 236);
+    color: white;
+    padding: 1% 1% 1% 1%;
+    font-size:small;
+}
+
+.btnn{
+    text-align: right;
+}
+
+.task-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.task-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.createdat{
+  font-size: small;
+}
+
+  

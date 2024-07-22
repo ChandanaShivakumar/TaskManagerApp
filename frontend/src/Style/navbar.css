@@ -1,0 +1,42 @@
+/* navbar.css */
+
+  .navbar {
+    padding: 10px;
+  }
+  
+  .navbar-task {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .navbar-nav .nav-item {
+    display: inline-block;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+    padding: 0.5rem 1rem; /* Add padding to look like a button */
+    border-radius: 0.25rem; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .nav-link:hover {
+    background-color: #fff; /* Background color on hover */
+    color: #007bff; /* Text color on hover */
+  }
+
+  .welcome-link{
+    color: #e6f518;
+    text-decoration: none;
+    font-size: 15px;
+    padding-top: 0.4rem;
+  }
+  
+  
