@@ -24,7 +24,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.get('http://localhost:8800/login', {
+      const response = await axios.get('https://task-manager-2sw69bapb-chandanashivakumars-projects.vercel.app/login', {
         params: {
           email: email,
           password: password
