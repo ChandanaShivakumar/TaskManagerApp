@@ -11,7 +11,7 @@ const app = express()
 const db = mysql.createConnection({
     host: "brr5735eneygtnzah18a-mysql.services.clever-cloud.com",
     user: "unda3lbwbyydfbeq",
-    password: "unda3lbwbyydfbeq",
+    password: "r0i8lC6NX6ToaE0GTfS7",
     database: "brr5735eneygtnzah18a",
     port:3306
 })
