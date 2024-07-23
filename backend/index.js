@@ -36,7 +36,7 @@ app.use(express.json())
 
 //cors
 // app.use(cors())
-const allowedOrigins = ['https://task-manager-app-frontend-ashen.vercel.app'];
+const allowedOrigins = ['https://task-manager-app-1f3f.vercel.app'];
 
 app.use(cors({
     origin: function (origin, callback) {
