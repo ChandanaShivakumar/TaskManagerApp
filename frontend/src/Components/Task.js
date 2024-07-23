@@ -26,7 +26,7 @@ const Task = () => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const response = await axios.get(`http://localhost:8800/task/${user.id}`);
+        const response = await axios.get(`https://task-manager-app-three-orcin.vercel.app/task/${user.id}`);
         setTasks(response.data);
       } catch (error) {
         console.error('Error fetching tasks:', error);
@@ -52,7 +52,7 @@ const Task = () => {
   // Delete Task
   const deleteTask = async (taskid) => {
     try {
-      await axios.delete(`http://localhost:8800/task/${taskid}`);
+      await axios.delete(`https://task-manager-app-three-orcin.vercel.app/task/${taskid}`);
       setTasks(tasks.filter(task => task.taskid !== taskid));
     } catch (error) {
       console.error('Error deleting task:', error);
@@ -84,7 +84,7 @@ const Task = () => {
       };
 
       // Send the POST request
-      const response = await axios.post('http://localhost:8800/task', newTask);
+      const response = await axios.post('https://task-manager-app-three-orcin.vercel.app/task', newTask);
       setTasks([...tasks, response.data]);
       closeModal();
       window.location.reload();
@@ -110,7 +110,7 @@ const Task = () => {
   // Handle Update Task
   const handleUpdateTask = async () => {
     try {
-      await axios.put(`http://localhost:8800/task/${selectedTask.taskid}`, {
+      await axios.put(`https://task-manager-app-three-orcin.vercel.app/task/${selectedTask.taskid}`, {
         taskname: taskName,
         taskdescription: taskDescription,
         taskcolumn: taskColumn,
@@ -132,7 +132,7 @@ const Task = () => {
     if (task) {
       task.taskcolumn = toColumn;
       setTasks([...tasks]);
-      axios.put(`http://localhost:8800/task/${taskId}`, {
+      axios.put(`https://task-manager-app-three-orcin.vercel.app/task/${taskId}`, {
         ...task,
         taskcolumn: toColumn,
       }).catch(error => console.error('Error updating task column:', error));
