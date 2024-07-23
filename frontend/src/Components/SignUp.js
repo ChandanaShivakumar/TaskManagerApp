@@ -79,7 +79,7 @@ const SignUp = () => {
         e.preventDefault();
         if (IsValidate()) {
             try {
-                await axios.post("http://localhost:8800/user", users);
+                await axios.post("https://task-manager-app-three-orcin.vercel.app/user", users);
                 toast.success('Signup successful');
                 setTimeout(() => {
                     navigate("/login");
