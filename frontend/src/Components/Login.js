@@ -24,7 +24,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.get('https://task-manager-app-jade.vercel.app/login', {
+      const response = await axios.get('https://task-manager-app-three-orcin.vercel.app/login', {
         params: {
           email: email,
           password: password
